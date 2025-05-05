@@ -1,0 +1,2 @@
+# deamon
+xmrig
